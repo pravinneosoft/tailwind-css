@@ -1,0 +1,45 @@
+Install Tailwind CSS using cammands:-
+1:-npm install -D tailwindcss
+1:-npx tailwindcss init
+
+Changes of tailwindconfig.js file
+
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+Add the Tailwind directives to your CSS Input.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Watch cammand tailwind css
+
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+
+ customizing  Tailwindcss
+
+ installation cammands
+1:-npx tailwindcss init
+2:-npx tailwindcss init tailwindcss-config.js
+3:-npx tailwindcss -c ./tailwindcss-config.js -i input.css -o output.css
+4:-npx tailwindcss init -p
+5:-npx tailwindcss init --full
+6:-npm install -D tailwindcss postcss autoprefixer
+
+Using with Preprocessors
+A guide to using Tailwind with common CSS preprocessors like Sass, Less, and Stylus.
+
+Since Tailwind is a PostCSS plugin, there’s nothing stopping you from using it with Sass, Less, Stylus, or other preprocessors, just like you can with other PostCSS plugins like Autoprefixer.
+
+It’s important to note that you don’t need to use a preprocessor with Tailwind — you typically write very little CSS on a Tailwind project anyways so using a preprocessor just isn’t as beneficial as it would be in a project where you write a lot of custom CSS.
+
+Core Concepts
+
+1:-Utility-First Fundamentals
+
